@@ -1,0 +1,36 @@
+Script started on 2023-12-21 19:07:28+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="137" LINES="14"]
+]0;ec2-user@jenkins-server:~/petclinic-microservices[?2004h[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m clear
+[?2004l[H[2J[3J]0;ec2-user@jenkins-server:~/petclinic-microservices[?2004h[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [7maws sts get-caller-identity --query Account --output text[27maws sts get-caller-identity --query Account --output text
+[?2004l[?1h=656084700079[m
+[K[?1l>]0;ec2-user@jenkins-server:~/petclinic-microservices[?2004h[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [7m656084700079[27m[K[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [7m656084700079[27m[K[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [7m656084700079[27m[1P65608470007[K[K[K[K[K[K[K[K[K[K[Kecho "aaaa"
+[?2004laaaa
+]0;ec2-user@jenkins-server:~/petclinic-microservices[?2004h[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m cat
+[?2004l^C
+]0;ec2-user@jenkins-server:~/petclinic-microservices[?2004h[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m docker image ls
+[?2004lREPOSITORY                       TAG              IMAGE ID       CREATED         SIZE
+devops-task-php-container        latest           5094861c8c50   24 hours ago    488MB
+devops-task-mssql-container      latest           61a413c9a24e   24 hours ago    1.57GB
+mcr.microsoft.com/mssql/server   2019-latest      b5316516906d   2 weeks ago     1.47GB
+maven                            3.8-openjdk-11   6c3ab1faec76   16 months ago   664MB
+clarusway/selenium-py-chrome     latest           9f92497aeebc   3 years ago     1.39GB
+]0;ec2-user@jenkins-server:~/petclinic-microservices[?2004h[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [K[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [K[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [K[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [K[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [K[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m pwd
+[?2004l/home/ec2-user/petclinic-microservices
+]0;ec2-user@jenkins-server:~/petclinic-microservices[?2004h[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m [7mgit add .[27m
+[7mgit commit -m 'added qa automation pipeline for dev'[27m
+[7mgit push[27m
+[7mgit checkout dev[27m
+[7mgit merge feature/msp-18[27m
+[7mgit push origin dev[27m[A[A[A[A[A[1;32mec2-user[35m@jenkins-server# petclinic-microservices:[33m[1;36m( feature/msp-18)$[00m git add .
+git commit -m 'added qa automation pipeline for dev'
+git push
+git checkout dev
+git merge feature/msp-18
+git push origin dev
+[?2004l[feature/msp-18 3dba10b] added qa automation pipeline for dev
+ 8 files changed, 183 insertions(+), 4 deletions(-)
+ create mode 100644 ansible/playbooks/pb_run_selenium_jobs.yaml
+ create mode 100644 ansible/scripts/run_selenium_jobs.sh
+ create mode 100644 jenkins/jenkinsfile-petclinic-nightly
+ create mode 100644 {
+Enumerating objects: 25, done.
+Counting objects:   4% (1/25)Counting objects:   8% (2/25)Counting objects:  12% (3/25)Counting objects:  16% (4/25)Counting objects:  20% (5/25)Counting objects:  24% (6/25)Counting objects:  28% (7/25)Counting objects:  32% (8/25)Counting objects:  36% (9/25)Counting obje
